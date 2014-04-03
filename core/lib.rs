@@ -12,7 +12,9 @@
 #![no_std]
 #![allow(ctypes)]
 #![crate_type = "rlib"]
-#![feature(macro_rules)]
+#![feature(macro_rules,globs)]
+
+pub use intristics::*;
 
 #[cfg(libc)]
 pub mod arc;
@@ -68,6 +70,7 @@ pub mod i32;
 pub mod i64;
 
 #[cfg(target_os="linux")]
+pub mod intristics;
 pub mod c_types;
 
 #[cfg(libc)]
