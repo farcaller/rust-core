@@ -13,7 +13,9 @@
 #![allow(ctypes)]
 #![crate_type = "rlib"]
 #![feature(macro_rules,globs)]
+#![allow(non_camel_case_types)]
 
+#[cfg(target_os="linux")]
 pub use intristics::*;
 
 #[cfg(libc)]
