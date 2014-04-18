@@ -28,11 +28,13 @@ pub fn breakpoint() {
 
 #[inline]
 #[lang="fail_bounds_check"]
+#[no_split_stack]
 pub fn fail_bounds_check(_: *u8, _: uint, _: uint, _: uint) -> ! {
     abort()
 }
 
 #[inline]
+#[no_split_stack]
 #[lang="fail_"]
 pub fn fail_(_: *u8, _: *u8, _: uint) -> ! {
     abort()
