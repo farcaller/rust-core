@@ -145,24 +145,24 @@ extern "rust-intrinsic" {
     pub fn roundf32(x: f32) -> f32;
     pub fn roundf64(x: f64) -> f64;
 
-    pub fn ctpop8(x: i8) -> i8;
-    pub fn ctpop16(x: i16) -> i16;
-    pub fn ctpop32(x: i32) -> i32;
-    pub fn ctpop64(x: i64) -> i64;
+    pub fn ctpop8(x: u8) -> u8;
+    pub fn ctpop16(x: u16) -> u16;
+    pub fn ctpop32(x: u32) -> u32;
+    pub fn ctpop64(x: u64) -> u64;
 
-    pub fn ctlz8(x: i8) -> i8;
-    pub fn ctlz16(x: i16) -> i16;
-    pub fn ctlz32(x: i32) -> i32;
-    pub fn ctlz64(x: i64) -> i64;
+    pub fn ctlz8(x: u8) -> u8;
+    pub fn ctlz16(x: u16) -> u16;
+    pub fn ctlz32(x: u32) -> u32;
+    pub fn ctlz64(x: u64) -> u64;
 
-    pub fn cttz8(x: i8) -> i8;
-    pub fn cttz16(x: i16) -> i16;
-    pub fn cttz32(x: i32) -> i32;
-    pub fn cttz64(x: i64) -> i64;
+    pub fn cttz8(x: u8) -> u8;
+    pub fn cttz16(x: u16) -> u16;
+    pub fn cttz32(x: u32) -> u32;
+    pub fn cttz64(x: u64) -> u64;
 
-    pub fn bswap16(x: i16) -> i16;
-    pub fn bswap32(x: i32) -> i32;
-    pub fn bswap64(x: i64) -> i64;
+    pub fn bswap16(x: u16) -> u16;
+    pub fn bswap32(x: u32) -> u32;
+    pub fn bswap64(x: u64) -> u64;
 
     pub fn i8_add_with_overflow(x: i8, y: i8) -> (i8, bool);
     pub fn i16_add_with_overflow(x: i16, y: i16) -> (i16, bool);

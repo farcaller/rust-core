@@ -9,6 +9,7 @@
 // except according to those terms.
 
 extern "rust-intrinsic" {
+    fn bswap16(x: u16) -> u16;
     fn u16_add_with_overflow(x: u16, y: u16) -> (u16, bool);
     fn u16_sub_with_overflow(x: u16, y: u16) -> (u16, bool);
     fn u16_mul_with_overflow(x: u16, y: u16) -> (u16, bool);

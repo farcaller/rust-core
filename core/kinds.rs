@@ -127,7 +127,7 @@ pub mod marker {
     /// "interior" mutability:
     ///
     /// ```
-    /// struct Cell<T> { priv value: T }
+    /// struct Cell<T> { value: T }
     /// ```
     ///
     /// The type system would infer that `value` is only read here and
