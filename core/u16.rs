@@ -30,6 +30,7 @@ pub fn mul_with_overflow(x: u16, y: u16) -> (u16, bool) {
     unsafe { u16_mul_with_overflow(x, y) }
 }
 
+#[allow(dead_code)]
 pub fn bswap(x: u16) -> u16 {
     ::i16::bswap(x as u16) as u16
 }

@@ -52,7 +52,7 @@ pub fn mul_with_overflow(x: int, y: int) -> (int, bool) {
 
 #[cfg(target_word_size = "32")]
 pub fn bswap(x: int) -> int {
-    ::i32::bswap(x as i32) as int
+    ::i32::bswap(x as u32) as int
 }
 
 #[cfg(target_word_size = "64")]
