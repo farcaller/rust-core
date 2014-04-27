@@ -18,6 +18,10 @@ pub trait Send {}
 #[lang="freeze"]
 pub trait Freeze {}
 
+/// Types with a constant size known at compile-time.
+#[lang="sized"]
+pub trait Sized {}
+
 /// **P**lain **o**ld **d**ata types without move semantics.
 #[lang="copy"]
 pub trait Copy {}
